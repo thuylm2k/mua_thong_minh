@@ -112,8 +112,4 @@ const rate = ref(4.5);
   </div>
 </template>
 
-<style lang="scss" scoped>
-.scroll_list_product {
-
-}
-</style>
+<style lang="scss" scoped></style>

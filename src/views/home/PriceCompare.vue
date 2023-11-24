@@ -49,6 +49,16 @@ import BarProduct from "../../components/BarProduct.vue";
         </div>
       </div>
     </div>
+
+    <div class="mt-5 flex justify-center items-center">
+      <button
+        class="p-3.5 flex flex-row flex-nowrap items-center gap-2 shadow-xl rounded"
+      >
+        <p>{{ true ? "Xem thêm 5 nơi bán khác" : "Rút gọn" }}</p>
+        <i v-if="true" class="bi bi-chevron-down"></i>
+        <i v-if="false" class="bi bi-chevron-up"></i>
+      </button>
+    </div>
   </div>
 </template>
 

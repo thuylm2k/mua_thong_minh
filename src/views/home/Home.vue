@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import Product from "../../components/Product.vue";
 import PriceCompare from "./PriceCompare.vue";
+import HistoryPrice from "./HistoryPrice.vue";
 
 const infoTabs = ref(1);
 
@@ -149,6 +150,10 @@ const handleInfoTabs = () => {};
       </div>
 
       <PriceCompare />
+
+      <el-divider />
+
+      <HistoryPrice />
 
       <div class="h-[550px]"></div>
     </section>
