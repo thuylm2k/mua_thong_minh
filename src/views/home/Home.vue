@@ -1,8 +1,14 @@
 <script setup>
 import { ref } from "vue";
-import Product from "../../components/Product.vue";
+import Product from "./Product.vue";
 import PriceCompare from "./PriceCompare.vue";
 import HistoryPrice from "./HistoryPrice.vue";
+import ProductDescription from "./ProductDescription.vue";
+import Evaluate from "./Evaluate.vue";
+import RelatedProduct from "./RelatedProduct.vue";
+import Suggest from "./Suggest.vue";
+import Blog from "./Blog.vue";
+import SuggestionToday from "./SuggestionToday.vue";
 
 const infoTabs = ref(1);
 
@@ -155,9 +161,78 @@ const handleInfoTabs = () => {};
 
       <HistoryPrice />
 
-      <div class="h-[550px]"></div>
+      <el-divider />
+
+      <ProductDescription />
+
+      <el-divider />
+
+      <Evaluate />
+
+      <RelatedProduct />
+
+      <Suggest />
+
+      <el-divider />
+
+      <Blog />
+
+      <el-divider />
+
+      <SuggestionToday />
     </section>
   </main>
+
+  <div class="w-full h-1 mt-10 bg-[#FF7227]"></div>
+
+  <footer class="flex justify-center py-12">
+    <div class="w-[1024px] grid grid-cols-3 gap-2">
+      <div class="p-4">
+        <img
+          src="https://lh3.googleusercontent.com/pw/ADCreHe1uaXgFtO8dlQi1fSrqmcu7OPYJYtSDgXclZin8jZ7oMkHSNc20AqAt7f3wnxrneK1VtZe0s9R7e2476DKCTes06oqHbdx41zz-o15Nf9ggs3HHqGC2K8Ym-dgGvem2sd_03jB8KlUf2MDyq4GOTH_=w256"
+          alt=""
+        />
+        <p class="mt-3">
+          Mua Thông Minh là website, ứng dụng tìm kiếm và đánh giá hàng hóa sản
+          phẩm online. Giúp bạn né Sale ảo, mua giá tốt, tin cậy và trở thành
+          người tiêu dùng thông thái. MuaThongMinh.vn không bán hàng!
+        </p>
+        <p class="mt-3 text-base uppercase">Kết Nối với chúng tôi</p>
+
+        <ul class="mt-3 flex flex-row flex-nowrap items-center gap-4 text-xl">
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-github"></i></li>
+        </ul>
+      </div>
+
+      <div class="p-4">
+        <p class="mb-4 text-lg font-medium uppercase">Về mua thông minh</p>
+
+        <ul class="grid grid-cols-1 gap-4">
+          <li>Blog</li>
+          <li>Giới thiệu</li>
+          <li>Chinh sách bảo mật</li>
+          <li>Điều khoản sử dụng</li>
+          <li>Metric</li>
+          <li>Điểm thi</li>
+        </ul>
+      </div>
+
+      <div class="p-4">
+        <p class="mb-4 text-lg font-medium uppercase">Liên hệ</p>
+        <ul class="grid grid-cols-1 gap-1">
+          <li>Công ty Cổ phần Khoa học Dữ liệu</li>
+          <li>Số ĐKKD: 0108677693</li>
+          <li>
+            Địa chỉ: Tầng 6 toà nhà AZ Lâm Viên, 107A Nguyễn Phong Sắc, Phường
+            Dịch Vọng Hậu, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam.
+          </li>
+          <li>Email: info@beecost.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss">
